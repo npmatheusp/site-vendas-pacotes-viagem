@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pacote.nome %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><%= pacote.nome %></h1>
+    </header>
+
+    <main>
+        <p><strong>Descrição:</strong> <%= pacote.descricao %></p>
+        <p><strong>Duração:</strong> <%= pacote.duracao %></p>
+        <p><strong>Local de Partida:</strong> <%= pacote.local_partida %></p>
+        <p id="preco"><strong>Preço:</strong> R$ <%= pacote.preco %></p>
+        <p><strong>Lugares Disponíveis:</strong> <%= pacote.quantidade_lugares %></p>
+        
+
+        <label for="quantidade">Quantidade de Lugares:</label>
+        <input type="number" id="quantidade" value="1" min="1" max="<%= pacote.quantidade_lugares %>">
+        <p id="valorTotal">Valor Total: R$ <%= pacote.preco %></p>
+        <button>Comprar</button>
+    </main>
+</body>
+</html>

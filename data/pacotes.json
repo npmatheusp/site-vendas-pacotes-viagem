@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "nome": "Viagem à Paris",
+      "data_partida": "2025-06-01",
+      "destino": "Paris",
+      "preco": 5000,
+      "descricao": "Uma viagem inesquecível para a cidade luz",
+      "duracao": "7 dias",
+      "local_partida": "São Paulo",
+      "quantidade_lugares": 10
+    },
+    {
+      "id": 2,
+      "nome": "Tour na Itália",
+      "data_partida": "2025-07-10",
+      "destino": "Itália",
+      "preco": 7000,
+      "descricao": "Explore Roma, Veneza e Florença",
+      "duracao": "10 dias",
+      "local_partida": "Rio de Janeiro",
+      "quantidade_lugares": 15
+    }
+  ]
+  
