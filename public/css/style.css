@@ -3,11 +3,28 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
+}
+
+body::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('aviao.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.2; 
+    z-index: -1; 
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #0000ffb3;
+    color: rgb(241, 237, 237);
     padding: 10px 0;
     text-align: center;
 }
@@ -26,7 +43,7 @@ li {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #0000ffb3;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -34,5 +51,25 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0000ff;
+}
+
+
+a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    background-color: #0000ffb3; 
+    transition: all 0.3s ease;
+}
+
+
+a:hover {
+    color: #fff; 
+    background-color: #0000ff; 
+    text-decoration: underline; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+
 }
